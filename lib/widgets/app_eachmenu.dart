@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:glade_home_12/constants/constants.dart';
 
-Widget AppEachMenu({context, background, logo}) {
+Widget AppEachMenu({context, background, logo, text1, text2, type}) {
   return Expanded(
     flex: 1,
     child: Container(
@@ -21,15 +21,15 @@ Widget AppEachMenu({context, background, logo}) {
           children: [
             Container(
               height: 50,
-              width: 50,
+              width: type != 1 ? 35 : 50,
               child: Image.asset(
                 "assets/images/$logo",
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fitWidth,
               ),
             ),
             SizedBox(height: 10),
-            Text("Fund", style: kAppMenuTitle),
-            Text("transfer", style: kAppMenuTitle),
+            Text(text1, style: kAppMenuTitle),
+            Text(text2, style: kAppMenuTitle),
             SizedBox(height: 5),
             Text("Send Funds to any", style: kAppMenuText),
             Text("Bank Account.", style: kAppMenuText),

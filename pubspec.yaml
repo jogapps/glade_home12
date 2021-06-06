@@ -63,9 +63,6 @@ flutter:
     - family: DMSans
       fonts:
         - asset: assets/fonts/DMSans-Regular.ttf
-    - family: DMSans-Medium
-      fonts:
-        - asset: assets/fonts/DMSans-Medium.ttf
     - family: DMSans-Bold
       fonts:
         - asset: assets/fonts/DMSans-Bold.ttf
